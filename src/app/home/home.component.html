@@ -1,1 +1,13 @@
 <p>home works!</p>
+<p>{{name}}</p>
+<p>{{age}}</p>
+<!-- <input value="{{name}}">
+<br/>
+<input [value]="name" title="day la {{name}}"> -->
+<input type="text" [(ngModel)] ="name">
+
+<input type="text" [(ngModel)] ="age">
+<h2 *ngIf="age > 18">ban gia qua</h2>
+<h2 *ngIf="age <= 18"> tre qua</h2>
+
+<button (click)="reset()">reset ten</button>
