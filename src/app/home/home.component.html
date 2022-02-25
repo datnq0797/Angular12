@@ -53,3 +53,11 @@
     </tr>
     
   </table>
+
+  <select id="city" (change)="changeCity($event)">
+    <option *ngFor="let data of vietnamData" value="{{data.city}}">{{data.city}}</option>
+  </select>
+
+  <select style="width: 200px;">
+    <option *ngFor="let j of districts">{{j}}</option>
+  </select>
